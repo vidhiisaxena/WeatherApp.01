@@ -5,8 +5,8 @@ function showTemp(response) {
 
 function search(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-input").value;
-  let cityElement = document.querySelector("#city");
+  let searchInputElement = document.querySelector(".search-input").value;
+  let cityElement = document.querySelector(".current-city");
   cityElement.innerHTML = searchInputElement;
   let api = "057314561f8344abb8d5d80t6761o6ae";
   let city = searchInputElement;
@@ -17,7 +17,7 @@ function search(event) {
 let forms = document.querySelector("#Search-form");
 forms.addEventListener("submit", search);
 
-let time = document.querySelector("#current-time");
+let time = document.querySelector("#current-date");
 let days = [
   "Sunday",
   "Monday",
